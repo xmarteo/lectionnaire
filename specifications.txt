@@ -1,4 +1,4 @@
-- pas d'espace avant les ponctuations doubles et à l'intérieur des guillemets : latex les rajoutera.
+- pas d'espace avant les ponctuations doubles :;!? et à l'intérieur des guillemets «»“”: latex les rajoutera.
 - pas de ligne de plus de 80 caractères (1 tab compte comme 4 caractères)
 - 2 tabs maximum dans uns ligne
 - pas de sauts de ligne
