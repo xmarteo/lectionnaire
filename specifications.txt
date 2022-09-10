@@ -7,3 +7,4 @@
 - emploi de « » au lieu de \og et \fg. Guillemets anglais “ ” comme guillemets de deuxième niveau.
 - autant que possible emploi de ’ pour les apostrophes au lieu de '
 - [TODO] là où il reste des choses à arbitrer ou vérifier
+- "sabbat" avec petit S (cf. AELF) ; "Écriture" et "Écritures" avec grand É (cf. AELF)
