@@ -1,7 +1,7 @@
 import os
 
 liste_dossiers = ["homeliaire_evangelique", "homeliaire_scripturaire", "lectionnaire"]
-liste_chaines_interdites = ["« ", " »", " ;", " :", " ?", " !", "'", "oe", "A ", "/", "Evang", "Eglise", "Elie", "Sabbat", "ecriture", "écriture", "Ecriture", "Eve", " ’", "’ ", "sprit-Saint", "aint Esprit", "sprit-saint", "aint esprit", "christ", "jésus", "jesus", "Notre Seigneur", "otre-"]
+liste_chaines_interdites = ["« ", " »", " ;", " :", " ?", " !", "'", "oe", "A ", "/", "Evang", "Eglise", "Elie", "Sabbat", "ecriture", "écriture", "Ecriture", "Eve", " ’", "’ ", "sprit-Saint", "aint Esprit", "sprit-saint", "aint esprit", "christ", "jésus", "jesus", "Notre Seigneur", "otre-", "1", "0", "Ange", "Archange"]
 longueur_max_lignes = 80
 largeur_tab = 4
 
