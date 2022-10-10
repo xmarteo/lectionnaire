@@ -9,8 +9,10 @@
 - [TODO] là où il reste des choses à arbitrer ou vérifier
 - "sabbat" avec petit S (cf. AELF) ; "Écriture" et "Écritures" avec grand É (cf. AELF) ;
 	dans l'Evangile, désignés collectivement, "les Juifs" avec majuscule (cf. AELF), mais "les pharisiens", "les scribes", "les chefs des prêtres", etc.
-	"la Résurrection" en parlant de celle du Seigneur, mais pas en parlant de celle d'un autre. de même, "l'Ascension", "la Pentecôte".
+	"la Résurrection" en parlant de celle du Seigneur, mais pas en parlant de celle d'un autre. de même, "l'Ascension", "la Pentecôte", "la Cène".
+	par contre, "la passion" (AELF n'est pas clair mais emploie le bas de casse dans la majorité des textes scripturaires)
 	"un ange, les anges, les archanges" sans majuscule (cf. AELF)
 - pas de majuscules de majesté pour Dieu ou le Christ (cf. convention AELF)
 - "le Saint-Esprit" trait d'union et "l'Esprit Saint" sans.
 - "Jésus-Christ" dans les homélies, mais "Jésus Christ" dans la bible si AELF l'écrit ainsi. "notre Seigneur Jésus-Christ" de cette manière.
+- "l’Ancien Testament", quand il est mentionné par les Pères
