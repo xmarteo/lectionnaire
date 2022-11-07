@@ -5,7 +5,7 @@ liste_chaines_interdites = ["« ", " »", " ;", " :", " ?", " !", "'", "oe", "/"
 "A ", "Evang", "Eglise", "Elie", "Sabbat", "ecriture", "écriture", "Ecriture", "Eve", "Etienne",
 "sprit-Saint", "aint Esprit", "sprit-saint", "aint esprit",
 "christ", "jésus", "jesus", "Notre Seigneur", "otre-",
-"Ange", "Archange", "cène", "cene", "Passion"]
+"Ange", "Archange", "cène", "cene", "gentils"]
 longueur_max_lignes = 80
 largeur_tab = 4
 
