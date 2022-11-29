@@ -4,7 +4,7 @@ def custom_open(filepath):
   """filepath should point to a TSV file with one line of headers
   featuring the following fields: code, incipit, rubric, file (done or not) and source.
   so far, this script will only use the fields code and file."""
-  l = open(filepath).readlines()
+  l = open(filepath, encoding="utf8").readlines()
   del l[0]
   if (len(l) > 0 and len(l[-1]) < 4):
     del l[-1]
