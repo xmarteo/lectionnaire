@@ -25,19 +25,17 @@ def folder_list(folderpath):
   return l
 
 # Opening of all descriptor files
-hom_evang = custom_open("homeliaire_evangelique.tsv")
-hom_script = custom_open("homeliaire_scripturaire.tsv")
-lectionnaire = custom_open("lectionnaire.tsv")
-legendaire = custom_open("legendaire.tsv")
+hom_evang = custom_open("homiliae.tsv")
+hom_script = custom_open("sermones_legendae.tsv")
+lectionnaire = custom_open("scriptura.tsv")
 
 # Getting the list of all folders
-hom_evang_files = folder_list("homeliaire_evangelique")
-hom_script_files = folder_list("homeliaire_scripturaire")
-lectionnaire_files = folder_list("lectionnaire")
-legendaire_files = folder_list("legendaire")
+hom_evang_files = folder_list("homiliae")
+hom_script_files = folder_list("sermones_legendae")
+lectionnaire_files = folder_list("scriptura")
 
 # Check for duplicates in the descriptor files
-codes = [x[0] for x in hom_evang+hom_script+lectionnaire+legendaire]
+codes = [x[0] for x in hom_evang+hom_script+lectionnaire]
 for c in set(codes):
   if codes.count(c) > 1:
     print("Doublon : "+c)
@@ -46,8 +44,7 @@ for c in set(codes):
 # or described as done but are empty, or not described as done but are populated.
 for (l1,l2) in [(hom_evang, hom_evang_files),
                 (hom_script, hom_script_files),
-                (lectionnaire, lectionnaire_files),
-                (legendaire, legendaire_files)]:
+                (lectionnaire, lectionnaire_files)]:
   # x is a pair (filename, file_is_done)
   for x in l1:
     if x not in l2:
