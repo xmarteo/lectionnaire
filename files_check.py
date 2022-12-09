@@ -9,6 +9,8 @@ def custom_open(filepath):
   if (len(l) > 0 and len(l[-1]) < 4):
     del l[-1]
   l = [x.split('\t') for x in l]
+  # ignore lines that correspond to a reading marked as a duplicate and that therefore should have no file
+  l = [ [x.strip() for x in line] for line in l if len(line[5].strip())==0 ]
   l = [( x[0].strip() , (len(x[3].strip())>0) ) for x in l]
   return l
 
