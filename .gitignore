@@ -4,4 +4,10 @@ __pycache__/
 *.gtex
 *.glog
 *.gaux
+*.idx
+*.ilg
+*.ind
+*.gz
+*.out
+*.toc
 
