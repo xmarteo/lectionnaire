@@ -12,6 +12,7 @@ try:
     texte = texte.replace(" !", "!")
     texte = texte.replace("« ", "«")
     texte = texte.replace(" »", "»")
+    texte = texte.replace("\u2013", "---")
     f = open(os.path.join(dossier, fichier), 'w', encoding='utf-8')
     f.write(texte)
     f.close()
