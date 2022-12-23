@@ -1,4 +1,5 @@
 - pas d'espace avant les ponctuations doubles :;!? et à l'intérieur des guillemets «»“”: latex les rajoutera.
+- les tirets d'incise sont représentés avec des --- avec espaces à l'intérieur : par exemple --- intérieur de l'incise ---;
 - pas de ligne de plus de 80 caractères (1 tab compte comme 4 caractères)
 - 2 tabs maximum dans uns ligne
 - pas de sauts de ligne
