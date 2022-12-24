@@ -94,8 +94,9 @@
 
 %%%%%%%%%%%%%%% STANDARD PACKAGES %%%%%%%%%%%%%%%
 
-%% Smaller format for the convenience of not redoing all the gregorio size tweaks, to be printed on A4 or larger.
-\usepackage[paperwidth=160mm, paperheight=226.3mm]{geometry}
+%% Smaller format for the convenience of not redoing all the gregorio size tweaks, to be printed on KDP standard 8.25in x 11in or larger.
+\usepackage[paperwidth=165mm, paperheight=220mm]{geometry}
+
 
 \usepackage{fontspec}
 \usepackage[nolocalmarks]{polyglossia}
@@ -116,13 +117,15 @@
 
 %%%%%%%%%%%%%%% GEOMETRY %%%%%%%%%%%%%%%
 
-%% Keeping in mind those are for A5 paper, to scale
+%% Keeping in mind those are for A5 paper, to scale.
+%% Margin targets on KDP standard 8.25in x 11in = 209.6mm x 279.4mm : inner = 25mm, outer = 12mm, top = 12mm, bottom = 12mm
+%% Calculated margins for 165x220: inner = 22.9, outer=top=bottom=11.4
 \geometry{
-inner=15mm,
-outer=10mm,
-top=12mm,
-bottom=10mm,
-headsep=3mm,
+inner=19.7mm,
+outer=9.4mm,
+top=15.4mm,
+bottom=9.4mm,
+headsep=6mm,
 }
 
 %% General scale of all graphical elements.
@@ -334,10 +337,16 @@ headsep=3mm,
 	\customreadingindex{#5}{#6}{#7}
 	%\index[L]{#5!#6}
 }
-\begin{center}
-#3\par
-\end{center}
-\rubric{#4}\par
+\ifblank{#3}{
+	\vspace{5mm}
+}{
+	\begin{center}
+	#3\par
+	\end{center}
+}
+\ifblank{#4}{}{
+	\rubric{#4}\par
+}
 % this next part makes the tab character active, I think by making it lowercase ~ and defining it as such (because \def<tab>{something} does not work)
 \begingroup
   \begingroup
@@ -345,7 +354,7 @@ headsep=3mm,
   \lowercase{%
   \endgroup
     \def~%
-  }{\hspace{1cm}}%
+  }{\hspace{8mm}}%
   \catcode9=\active
   \obeylines\input{scriptura/#2.tex}%
 \endgroup
@@ -417,7 +426,7 @@ headsep=3mm,
 
   %% needspace: should be barely more than the vertical space for the titles, rubrics excluded.
   %% this is to ensure that the page does not get cut after the title or the phantomsection.
-  \needspace{12\baselineskip}
+  \needspace{15\baselineskip}
   %% phantomsection is to allow the label to attach to the title and not the previous counter object.
   \phantomsection
   \label{#1}
