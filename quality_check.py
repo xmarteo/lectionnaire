@@ -1,12 +1,12 @@
 import os
 
-liste_dossiers = ["homeliaire_evangelique", "homeliaire_scripturaire", "lectionnaire"]
+liste_dossiers = ["homiliae", "sermones_legendae", "scriptura"]
 liste_chaines_interdites = ["« ", " »", " ;", " :", " ?", " !", "'", "oe", "/", " ’", "’ ", "1", "0",
 "A ", "Evang", "Eglise", "Elie", "Sabbat", "ecriture", "écriture", "Ecriture", "Eve", "Etienne",
 "sprit-Saint", "aint Esprit", "sprit-saint", "aint esprit",
 "christ", "jésus", "jesus", "Notre Seigneur", "otre-",
 "Ange", "Archange", "cène", "cene", "gentils"]
-longueur_max_lignes = 80
+longueur_max_lignes = 90
 largeur_tab = 4
 
 def erreur(dossier, fichier, err, ligne):
