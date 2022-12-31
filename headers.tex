@@ -95,8 +95,9 @@
 %%%%%%%%%%%%%%% STANDARD PACKAGES %%%%%%%%%%%%%%%
 
 %% Smaller format for the convenience of not redoing all the gregorio size tweaks, to be printed on KDP standard 8.25in x 11in or larger.
-\usepackage[paperwidth=165mm, paperheight=220mm]{geometry}
-
+%\usepackage[paperwidth=165mm, paperheight=220mm]{geometry}
+%% Normal scale
+\usepackage[paperwidth=8.25in, paperheight=11in]{geometry}
 
 \usepackage{fontspec}
 \usepackage[nolocalmarks]{polyglossia}
@@ -117,14 +118,13 @@
 
 %%%%%%%%%%%%%%% GEOMETRY %%%%%%%%%%%%%%%
 
-%% Keeping in mind those are for A5 paper, to scale.
 %% Margin targets on KDP standard 8.25in x 11in = 209.6mm x 279.4mm : inner = 25mm, outer = 12mm, top = 12mm, bottom = 12mm
 %% Calculated margins for 165x220: inner = 22.9, outer=top=bottom=11.4
 \geometry{
-inner=19.7mm,
-outer=9.4mm,
-top=15.4mm,
-bottom=9.4mm,
+inner=25mm,
+outer=12mm,
+top=18mm,
+bottom=12mm,
 headsep=6mm,
 }
 
