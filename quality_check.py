@@ -22,7 +22,10 @@ for dossier in liste_dossiers :
             erreur(dossier, fichier, x, i)
         if (i==0):# verification specifique a la premiere ligne
           if l[0]=='«':
-            y=1
+            if l[1]=='“':
+              y=2
+            else:
+              y=1
           else:
             y=0 # y est la position du premier caractère alphabétique attendu
           if (not l[y].isupper()): # le texte ne commence pas par une majuscule
