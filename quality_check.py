@@ -13,7 +13,7 @@ def erreur(dossier, fichier, err, ligne):
   print(dossier+"/"+fichier+"    "+err+" "+str(ligne+1))
 
 for dossier in liste_dossiers :
-  for fichier in os.listdir(dossier) :
+  for fichier in [f for f in os.listdir(dossier) if f[-4:]==".tex"] :
     try:
       lignes = open(os.path.join(dossier, fichier), encoding='utf-8').readlines()
       for (i,l) in enumerate(lignes):
