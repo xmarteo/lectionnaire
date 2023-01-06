@@ -97,7 +97,9 @@
 %% Smaller format for the convenience of not redoing all the gregorio size tweaks, to be printed on KDP standard 8.25in x 11in or larger.
 %\usepackage[paperwidth=165mm, paperheight=220mm]{geometry}
 %% Normal scale
-\usepackage[paperwidth=8.25in, paperheight=11in]{geometry}
+%\usepackage[paperwidth=8.25in, paperheight=11in]{geometry}
+%% Slightly smaller format
+\usepackage[paperwidth=180mm, paperheight=240mm]{geometry}
 
 \usepackage{fontspec}
 \usepackage[nolocalmarks]{polyglossia}
@@ -119,12 +121,12 @@
 %%%%%%%%%%%%%%% GEOMETRY %%%%%%%%%%%%%%%
 
 %% Margin targets on KDP standard 8.25in x 11in = 209.6mm x 279.4mm : inner = 25mm, outer = 12mm, top = 12mm, bottom = 12mm
-%% Calculated margins for 165x220: inner = 22.9, outer=top=bottom=11.4
+%% Calculated margins for 165x220: inner = 22.9, outer=top=bottom=11.4 (with some margin of error)
 \geometry{
 inner=25mm,
 outer=12mm,
 top=18mm,
-bottom=12mm,
+bottom=15mm,
 headsep=6mm,
 }
 
@@ -378,6 +380,9 @@ headsep=6mm,
 	\end{parcolumns}
 }
 
+\usepackage{paracol} % worse than parcolumns in terms of space management, but can do facing pages
+\twosided[pm]
+
 %%%%%%%%%%%%%%% HEADER STYLES %%%%%%%%%%%%%%%
 
 \pagestyle{fancy}
@@ -492,6 +497,12 @@ headsep=6mm,
 \newcommand{\nocturn}[1]{
   \needspace{8\baselineskip}
   \intermediatetitle{In \Rnum{#1} Nocturno}
+}
+
+%% For parts of the book that are typeset with bilingual facing pages, this allows to skip to the next left-hand page at the beginning of such a part.
+\newcommand*\cleartoleftpage{%
+  \clearpage
+  \ifodd\value{page}\hbox{}\newpage\fi
 }
 
 %% command to wrap printindex and set the headers for indices
